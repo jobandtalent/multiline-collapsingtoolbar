@@ -879,6 +879,16 @@ final class CollapsingTextHelper {
         }
     }
 
+    // BEGIN MODIFICATION: Add getTextHeight method to expose the title height
+    public int getTextHeight() {
+        if (mTextLayout != null) {
+            return mTextLayout.getHeight();
+        } else {
+            return 0;
+        }
+    }
+    // END MODIFICATION
+
     /**
      * Set the title to display
      *
